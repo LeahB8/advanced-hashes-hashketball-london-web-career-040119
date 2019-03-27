@@ -89,32 +89,26 @@ def game_hash
             :steals => 4,
             :blocks => 5,
             :slam_dunks => 5
-            }
           },
-          :player4 => {
-            :player_name => "Ben Gordon",
+          "Ben Gordon" => {
             :number => 8,
             :shoe => 15,
-            :stats => {
-              :points => 33,
-              :rebounds => 3,
-              :assists => 2,
-              :steals => 1,
-              :blocks => 1,
-              :slam_dunks => 0
-            }
+            :points => 33,
+            :rebounds => 3,
+            :assists => 2,
+            :steals => 1,
+            :blocks => 1,
+            :slam_dunks => 0
           },
-          :player5 => {
-            :player_name => "Brendan Haywood",
+          "Brendan Haywood" => {
             :number => 33,
             :shoe => 15,
-            :stats => {
-              :points => 6,
-              :rebounds => 12,
-              :assists => 12,
-              :steals => 22,
-              :blocks => 5,
-              :slam_dunks => 12
+            :points => 6,
+            :rebounds => 12,
+            :assists => 12,
+            :steals => 22,
+            :blocks => 5,
+            :slam_dunks => 12
             }
           }
         }

@@ -166,14 +166,14 @@ team_names
   
 def player_numbers(team)
   array = []
-  game_hash.each do | home_away, data |
-    data[:players].each do | key, value |
-      if key[:team_name] == team
-        array << value[:number]
+  game_hash.each do | origin, data |
+    data[:players].each do | name, stats |
+      if data[:team_name] == team
+        array << data[:players][name][:number]
       end
     end
   end
-  array
+  return array
 end
 
 player_numbers("Brooklyn Nets")

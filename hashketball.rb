@@ -180,16 +180,12 @@ player_numbers("Brooklyn Nets")
 
 
 def player_stats(name)
-  answer = {}
-  game_hash.each do | teams_playing, data |
-    data[:stats].each do | key, value |
-      if key[:player_name] == name
-        key.delete(:player_name)
-        answer = :stats
-      end
+  game_hash.each do | origin, data |
+    stats = data[:players][name]
+    if stats
+      return stats
     end
   end
-  answer
 end
   
   

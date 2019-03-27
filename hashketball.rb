@@ -190,6 +190,15 @@ end
   
   
 player_stats("Alan Anderson")
+
+
+def player_names(team)
+  names = []
+  game_hash.each do | origin, data |
+    data[:players].each do | name, stats |
+      if data[:team_name] == team
+        
+  
   
 
 def big_shoe_rebounds

@@ -147,7 +147,7 @@ def team_colors(team)
         answer << value[:colors]
       end
   end
-  answer
+  answer.flatten
 end
       
 team_colors("Brooklyn Nets")

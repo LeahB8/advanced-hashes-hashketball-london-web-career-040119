@@ -155,8 +155,8 @@ team_colors("Brooklyn Nets")
 
 def team_names
   array = []
-  game_hash.each do | home_away, data |
-      array << data[:team_name]
+  game_hash.each do | team_origin, team |
+      array << team[:team_name]
   end
   array
 end

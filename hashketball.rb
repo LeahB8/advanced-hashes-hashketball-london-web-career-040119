@@ -197,7 +197,12 @@ def player_names(team)
   game_hash.each do | origin, data |
     data[:players].each do | name, stats |
       if data[:team_name] == team
-        
+        names << name
+      end
+    end
+  end
+  return names
+end
   
   
 

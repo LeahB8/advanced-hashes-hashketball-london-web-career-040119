@@ -130,10 +130,9 @@ num_points_scored("Brendan Haywood")
 
 
 def shoe_size(name)
-  game_hash.each do | teams_playing, data |
-    data[:players].each do | player_name, player_data |
-      if player_name == name
-        return player_data[:stats][:shoe]
+  game_hash.each do | _, team |
+      if team[:players][name]
+        return team[:players][name][:shoe]
       end
     end
   end

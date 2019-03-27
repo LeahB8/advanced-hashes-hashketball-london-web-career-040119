@@ -69,7 +69,6 @@ def game_hash
             :steals => 2,
             :blocks => 7,
             :slam_dunks => 2
-            }
           },
           :player2 => {
             :player_name => "Bismak Biyombo",

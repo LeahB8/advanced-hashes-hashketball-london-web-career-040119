@@ -134,7 +134,6 @@ def shoe_size(name)
       if team[:players][name]
         return team[:players][name][:shoe]
       end
-    end
   end
 end
 

@@ -117,15 +117,14 @@ end
 
 
 
-def num_points_scored(name)
-  game_hash.each do | origin, team |
-     stats = team[:players][name]
-     if stats
-       return stats[:points]
-     end
-  end
+def num_points_scored(player_name)
+    game_hash.each do |origin, team|
+      stats = team[:players][player_name]
+      if stats
+          return stats[:points]
+      end
+    end
 end
-
 
 num_points_scored("Brendan Haywood")
 
